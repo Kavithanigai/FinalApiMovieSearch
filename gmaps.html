@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="keywords" content="movie search, movies near me">
+    <meta name="author" content="Kavi Than">
+    <title>API Capstone Movie Search | Movie Theaters</title>
+    <link href="index.css" type="text/css" rel="stylesheet">
+    <link href="grid.css" type="text/css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">KT</span> Movie Search</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="search.html">Movie Search</a></li>
+            <li class="current"><a href="gmaps.html">Movie Theaters Near Me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <!-- Section for displaying Map with movie theaters near user-->
+    <section role='section'>
+    <div class="container gmapsDisplay">
+     <div class="row">
+       <div class='col-12'>
+         <h4 class="gmapHeading"><p> Please click allow in the pop-up to see movie theaters near you.</p></h4>
+         <div id='map'>
+         </div><!-- Closing for singleMovie div -->
+       </div><!-- Closing for col-3 div -->
+     </div><!-- Closing for row div -->
+     </div><!-- Closing for container div -->
+   </section>
+
+  <!-- Section for footer-->
+    <footer>
+      <div class="container">
+       <p>KT Movie Search, Copyright &copy; 2018</p>
+      </div><!-- Closing for container div -->
+    </footer>
+
+     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+     <script src= "index.js"></script>
+       <script> function displayMap(){
+         $('#map').html(getMyLocation());
+       }
+       $(displayMap());
+       </script>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnqlJ1LHqtkZFHEf2EgwKg07v8zyIo1Ds&libraries=places" async defer></script>
+
+  </body>
+</html>

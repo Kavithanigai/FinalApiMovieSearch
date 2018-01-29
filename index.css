@@ -1,0 +1,414 @@
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+ /* line-height:  1.5;*/
+  padding: 0;
+  margin: 0;
+  background-image: url('http://celebrationentertainment.com/wp-content/uploads/2015/07/curtains-3.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+/*Global*/
+.container{
+  width: 100%;
+  margin: auto;
+  position:relative;
+  overflow: hidden;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  background-color: #35424a;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid;
+  padding-bottom: 20px;
+}
+
+header a{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float: left;
+  display: inline;
+  padding:0 20px 0 20px;
+}
+
+header #branding{
+  float: left;
+  margin-left: 20px;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight, header .current a{
+  color: #e8491d;
+  font-weight: bold;
+}
+
+header a:hover{
+  color: #cccccc;
+  font-weight: bold;
+}
+
+.slide-container{
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  position: relative;
+}
+/*Slides*/
+#slides{
+  margin-top: 20px;
+  text-align: center;
+  display:block;
+  border-radius: 5px;
+}
+
+.slider-inner{
+  min-height:200px;
+  margin-top: 10px;
+  width:100%;
+ position: relative;
+  overflow: hidden;
+  float:left;
+  padding:3px;
+}
+
+.slider-inner img{
+  display:none;
+  min-height: 30%;
+  width:100%;
+  border: 1px solid white;
+
+}
+
+.slider-inner img.active{
+  display: inline-block;
+  width:100%;
+  max-height: 500px;
+}
+
+.slider-outer{
+  margin: auto;
+  padding: auto;
+}
+
+.prev,.next{
+  float:left;
+  margin-top: 30%;
+  cursor: pointer;
+  position: relative;
+  color: #f2f2f2;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.prev{
+  position: relative;
+  width:40px;
+  height:40px;
+  margin-right: -45px;
+  z-index: 100;
+}
+
+.next{
+  position: relative;
+  width:40px;
+  height:40px;
+  margin-left: -45px;
+  z-index: 100;
+}
+
+.search-container{
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+
+#search{
+  padding: 15px;
+  color: #ffffff;
+}
+
+#search h1{
+  float: left;
+}
+
+#search form{
+  float:right;
+  margin-top: 15px;
+}
+
+#search input{
+  padding: 15px;
+  height: 25px;
+  width: 250px;
+  border-radius: 3px;
+  font-size: 18px;
+}
+
+.searchBtn{
+  height: 38px;
+  background: #e8491d;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  border-radius: 3px;
+}
+
+#movies{
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+
+
+.card {
+  border: 1px solid #E5E5E5;
+  margin-bottom: 10px;
+  margin-top:5px;
+}
+
+.card-image {
+   width: 100%;
+}
+
+@media(min-width:960px){
+  #movies .col-3 .well{
+    max-height: 320px;
+
+  }
+  #movies .col-3 img{
+    max-height: 200px;
+    max-width: 100%;
+  }
+}
+
+.card-content {
+ padding: 20px;
+  color: white;
+}
+
+.card-content .movieTitle {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 5px;
+
+}
+
+.card-content p {
+  margin: 0.5em 0;
+
+}
+
+.movieDetails{
+color: white;
+
+}
+
+.singleMoviecard {
+  border: 1px solid #E5E5E5;
+  margin-bottom: 10px;
+  margin-top:10px;
+  margin-bottom:10px;
+/*  height: auto;*/
+}
+
+.thumbnail {
+   width: 70%;
+   height: auto;
+   display:inline block;
+   margin-top: 80px;
+   border-radius: 3px;
+   border: 1px solid #E5E5E5;
+}
+
+.movieInfo {
+  width: 100%;
+  padding: 20px;
+  margin-top: 80px;
+  color: white;
+  display: inline block;
+  border: 1px solid #E5E5E5;
+  border-radius: 3px;
+  height: auto;
+}
+
+.singleMoviecard p {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 10px;
+
+}
+
+.card-content p span {
+  margin: 0.5em 0;
+
+}
+
+.movieDetails{
+color: white;
+}
+
+.mapTitle{
+  color: white;
+}
+
+#map{
+  min-height:400px;
+  max-width:70%;
+  text-align: center;
+  margin: 10px auto 90px auto;
+  border-radius: 3px;
+ /* padding-bottom:200px;*/
+}
+
+footer{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0.6rem;
+  color: #ffffff;
+  background-color: #e8491d;
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+/*about.html*/
+.aboutUs{
+  color: white;
+  width:70%;
+  height: 900px;
+  margin-top: 120px;
+  font-size: 25px;
+  font-family: bold;
+  line-height: 50px;
+}
+
+/*search.html*/
+.searchMovCls{
+  margin-top: 100px;
+}
+
+.searchMovies{
+  padding-bottom:400px;
+  padding-top: 70px;
+   text-align: center;
+}
+
+/*gmaps.html*/
+.gmapsDisplay{
+  padding-top: 100px;
+  padding-bottom:300px;
+  margin:auto;
+}
+
+.gmapHeading{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+
+}
+
+/*Mobile screen*/
+@media(min-width:150px) and (max-width:640px){
+  header #branding{
+    width: 100%;
+  }
+
+  header #branding h1{
+    text-align: center;
+    margin: auto;
+  }
+
+  header li{
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .slide-container{
+    width: 100%;
+    margin: auto;
+  }
+
+  #slides{
+    margin-top: 20px;
+  }
+  .prev,.next{
+    margin-top: 30%;
+  }
+
+  .search-container{
+    width: 100%;
+  }
+
+  .searchMovCls{
+    margin-top: 40px;
+  }
+
+  #search h1{
+    margin: auto;
+    width:100%;
+  }
+
+  #search form{
+    margin: auto;
+    width:100%;
+    margin-top:10px;
+
+  }
+
+  .searchBtn{
+    margin-top:10px;
+  }
+
+  .searchMovies{
+    padding-top: 40px;
+  }
+  .thumbnail {
+     width: 100%;
+     margin-top: 40px;
+  }
+
+  .movieInfo {
+    margin-top: 40px;
+  }
+  .aboutUs{
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 30px;
+  }
+
+  #map{
+    min-height: 300px;
+    max-width: 100%;
+  }
+  .gmapsDisplay{
+    padding-top: 30px;
+  }
+}
