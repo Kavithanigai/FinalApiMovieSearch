@@ -169,6 +169,7 @@ function searchMovieDetail(data){
 console.log("searchMovies Executed");
  const singleMovie = renderSingleMovie(data);
  console.log("result="+singleMovie);
+ window.scrollTo( 0, 0 );
  $('#slides').remove();
  $('#search').remove();
  $('#movies').html(singleMovie);
