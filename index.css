@@ -1,15 +1,16 @@
 
 body{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 15px;
- /* line-height:  1.5;*/
   padding: 0;
   margin: 0;
-  background-image: url('http://celebrationentertainment.com/wp-content/uploads/2015/07/curtains-3.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
+  background: url(apiBg.jpg);
+    background-size: cover;
+    background-size: 1920px 1080px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #252525;
 }
 
 /*Global*/
@@ -26,11 +27,11 @@ ul{
 }
 
 header{
-  background-color: #35424a;
+  background-color: #6E6E6E;
   color: #ffffff;
   padding-top: 30px;
   min-height: 70px;
-  border-bottom: #e8491d 3px solid;
+  border-bottom: #01DFD7 3px solid;
   padding-bottom: 20px;
 }
 
@@ -44,7 +45,7 @@ header a{
 header li{
   float: left;
   display: inline;
-  padding:0 20px 0 20px;
+  padding:0 40px 0 40px;
 }
 
 header #branding{
@@ -62,7 +63,7 @@ header nav{
 }
 
 header .highlight, header .current a{
-  color: #e8491d;
+  color: #01DFD7;
   font-weight: bold;
 }
 
@@ -71,76 +72,13 @@ header a:hover{
   font-weight: bold;
 }
 
-.slide-container{
+.search-container{
   width: 70%;
   text-align: center;
   margin: auto;
-  position: relative;
-}
-/*Slides*/
-#slides{
-  margin-top: 20px;
-  text-align: center;
-  display:block;
-  border-radius: 5px;
 }
 
-.slider-inner{
-  min-height:200px;
-  margin-top: 10px;
-  width:100%;
- position: relative;
-  overflow: hidden;
-  float:left;
-  padding:3px;
-}
-
-.slider-inner img{
-  display:none;
-  min-height: 30%;
-  width:100%;
-  border: 1px solid white;
-
-}
-
-.slider-inner img.active{
-  display: inline-block;
-  width:100%;
-  max-height: 500px;
-}
-
-.slider-outer{
-  margin: auto;
-  padding: auto;
-}
-
-.prev,.next{
-  float:left;
-  margin-top: 30%;
-  cursor: pointer;
-  position: relative;
-  color: #f2f2f2;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.prev{
-  position: relative;
-  width:40px;
-  height:40px;
-  margin-right: -45px;
-  z-index: 100;
-}
-
-.next{
-  position: relative;
-  width:40px;
-  height:40px;
-  margin-left: -45px;
-  z-index: 100;
-}
-
-.search-container{
+.aboutUs-container{
   width: 70%;
   text-align: center;
   margin: auto;
@@ -148,7 +86,7 @@ header a:hover{
 
 #search{
   padding: 15px;
-  color: #ffffff;
+  color: #848484;
 }
 
 #search h1{
@@ -170,7 +108,7 @@ header a:hover{
 
 .searchBtn{
   height: 38px;
-  background: #e8491d;
+  background: #6E6E6E;
   border: 0;
   padding-left: 20px;
   padding-right: 20px;
@@ -182,13 +120,15 @@ header a:hover{
   width: 70%;
   text-align: center;
   margin: auto;
+  padding-bottom: 50px;
 }
 
 
 .card {
-  border: 1px solid #E5E5E5;
+  border: 1px solid #6E6E6E;
   margin-bottom: 10px;
   margin-top:5px;
+  background-color: #C5F4EF;
 }
 
 .card-image {
@@ -196,6 +136,7 @@ header a:hover{
 }
 
 @media(min-width:960px){
+
   #movies .col-3 .well{
     max-height: 320px;
 
@@ -208,13 +149,14 @@ header a:hover{
 
 .card-content {
  padding: 20px;
-  color: white;
+  color: #848484;
 }
 
 .card-content .movieTitle {
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 5px;
+
 
 }
 
@@ -224,7 +166,7 @@ header a:hover{
 }
 
 .movieDetails{
-color: white;
+color: #848484;
 
 }
 
@@ -233,25 +175,25 @@ color: white;
   margin-bottom: 10px;
   margin-top:10px;
   margin-bottom:10px;
-/*  height: auto;*/
 }
 
 .thumbnail {
    width: 70%;
    height: auto;
    display:inline block;
-   margin-top: 80px;
+   margin-top: 30px;
    border-radius: 3px;
-   border: 1px solid #E5E5E5;
+   border: 1px solid #6E6E6E;
 }
 
 .movieInfo {
   width: 100%;
   padding: 20px;
-  margin-top: 80px;
-  color: white;
+  margin-top: 30px;
+  color: #6E6E6E;
+  font-weight: bold;
   display: inline block;
-  border: 1px solid #E5E5E5;
+  border: 1px solid #848484;
   border-radius: 3px;
   height: auto;
 }
@@ -269,11 +211,11 @@ color: white;
 }
 
 .movieDetails{
-color: white;
+color: #848484;
 }
 
 .mapTitle{
-  color: white;
+  color: #848484;
 }
 
 #map{
@@ -281,8 +223,6 @@ color: white;
   max-width:70%;
   text-align: center;
   margin: 10px auto 90px auto;
-  border-radius: 3px;
- /* padding-bottom:200px;*/
 }
 
 footer{
@@ -292,21 +232,19 @@ footer{
   left: 0;
   padding: 0.6rem;
   color: #ffffff;
-  background-color: #e8491d;
+  background-color: #6E6E6E;
   text-align: center;
   margin-top: 20px;
-
 }
 
 /*about.html*/
 .aboutUs{
-  color: white;
+  color: #848484;
   width:70%;
-  height: 900px;
-  margin-top: 120px;
-  font-size: 25px;
-  font-family: bold;
-  line-height: 50px;
+  margin-top: 30px;
+  font-size: 20px;
+/*  font-family: bold;*/
+  line-height: 20px;
 }
 
 /*search.html*/
@@ -322,26 +260,37 @@ footer{
 
 /*gmaps.html*/
 .gmapsDisplay{
-  padding-top: 100px;
-  padding-bottom:300px;
+  padding-top: 10px;
+  padding-bottom:50px;
   margin:auto;
 }
 
 .gmapHeading{
-  color: white;
+  color: #848484;
   font-size: 20px;
   text-align: center;
-
 }
 
 /*Mobile screen*/
 @media(min-width:150px) and (max-width:640px){
+
+  body{
+    font-size: 12px;
+    background: url(mobileApiBg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
   header #branding{
     width: 100%;
+    text-align: center;
+    margin: auto;
   }
 
   header #branding h1{
     text-align: center;
+  /*  width: 100%;*/
     margin: auto;
   }
 
@@ -349,19 +298,10 @@ footer{
     line-height: 30px;
     width: 100%;
     text-align: center;
+    padding: 0 -30px 0 -30px;
+   margin:auto;
   }
 
-  .slide-container{
-    width: 100%;
-    margin: auto;
-  }
-
-  #slides{
-    margin-top: 20px;
-  }
-  .prev,.next{
-    margin-top: 30%;
-  }
 
   .search-container{
     width: 100%;
@@ -399,9 +339,9 @@ footer{
     margin-top: 40px;
   }
   .aboutUs{
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
-    margin-top: 30px;
+    margin-top: 10px;
   }
 
   #map{
@@ -409,6 +349,6 @@ footer{
     max-width: 100%;
   }
   .gmapsDisplay{
-    padding-top: 30px;
+    padding-top: 20px;
   }
 }

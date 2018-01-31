@@ -80,7 +80,7 @@ function renderResult(result) {
                 <img class="card-image" src="http://image.tmdb.org/t/p/w780/${result.poster_path}" alt=${result.title}/>
                 <div class="card-content">
                   <p class="movieTitle">${resAltTitle}</p>
-                  <a onclick="movieSelected('${result.id}')" class  ="movieDetails btn btn-primary" href="#" style="color:#72ECF0;">Movie Details</a>
+                  <a onclick="movieSelected('${result.id}')" class  ="movieDetails btn btn-primary" href="#" style="color:#146F79;">Movie Details</a>
                 </div>
               </div>
         </div>`;
@@ -97,7 +97,7 @@ function searchMovies(data) {
  else{
  const movieSearchResults = data.results.map((item, index) => renderResult(item));
  //console.log("result="+movieSearchResults);
- $('#slides').remove();
+ $('#aboutUsSec').remove();
  $('#search').remove();
   $('#movies').html(movieSearchResults);
  getMovie();
@@ -155,7 +155,7 @@ function renderSingleMovie(result) {
                 <p>Title : <span>${result.original_title}</span></p>
                 <p>Genres: <span>${genresList}</span></p>
                 <p>Release Date : <span>${result.release_date}</span></p>
-                <p>Home page : <span><a href=${result.homepage} style="color:#72ECF0;">${result.homepage}</a></span></p>
+                <p>Home page : <span><a href=${result.homepage} style="color:#146F79;">${result.homepage}</a></span></p>
                 <p>Tag Line : <span>${result.tagline}</span></p>
                 <p>Overview : <span>${result.overview}</span></p>
               </div>

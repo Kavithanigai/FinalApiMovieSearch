@@ -11,6 +11,7 @@
    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
    <link href="index.css" type="text/css" rel="stylesheet">
    <link href="grid.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Condensed|Cuprum|Marmelad|Noto+Serif|PT+Sans" rel="stylesheet">
   </head>
 
   <body>
@@ -23,39 +24,25 @@
             <nav role='navigation'>
             <ul>
               <li class="current"><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="search.html">Movie Search</a></li>
+            <!--  <li><a href="about.html">About</a></li>
+              <li><a href="search.html">Movie Search</a></li> -->
               <li><a href="gmaps.html">Movie Theaters Near Me</a></li>
             </ul>
           </nav>
         </div><!-- Closing for container div -->
           </header>
 
+          <section id= "aboutUsSec">
+            <div class= "aboutUs-container aboutUs">
+              <h2>Welcome to KT Movie Search!!</h2>
+              <p>KT Movie Search lets the user search for movies, review details and find nearby movie theaters.
+              </br>Movie Search results and details - courtesy of The Movie DB.
+              </ul>
+              </p>
+            </div>
+          </section>
 
-    <!-- Section for movie slides-->
-    <section role='section'>
-    <div class="slide-container">
-      <div class='row'>
-          <div id='slides'>
-            <div class= "slider-outer">
-            <a class="prev">&#10094;</a>
-                <div class= "slider-inner">
-                  <img src="https://www.gamezone.com/wp-content/uploads/2017/12/thelastjedi-posterbanner.jpg" class="active" alt="The Last Jedi">
-                  <img src="https://images.mymovies.net/images/film/vue_player_imgs/fid17541_trid15805.jpg?sc=.99" alt="Ragnarok">
-                  <img src="https://i.ytimg.com/vi/9in6Ar0Op0Q/maxresdefault.jpg" alt="Despicable Me 3">
-                  <img src="https://proofinpicture.files.wordpress.com/2017/03/wonderwoman_wallpaper.jpeg?w=1536" alt="Wonder woman">
-                  <img src="http://images.entertainment.ie/images_content/rectangle/620x372/01-the-greatest-showman-hugh-jackman.jpg" alt="The Greatest Showman">
-                  <img src="http://cdn-static.denofgeek.com/sites/denofgeek/files/styles/main_wide/public/2017/04/gotg2.jpg?itok=YoxtpMx9" alt="The Guardians of Angel 2">
-                  <img src="http://www.indiewire.com/wp-content/uploads/2017/12/jumanji-welcome-to-the-jungle-cast-5k-0-2048x1152.jpg?w=780" alt="Jumanji Welcome To The Jungle">
-                </div><!-- Closing for slider-inner div -->
-            <a class="next">&#10095;</a>
-            </div><!-- Closing for slider-outer div -->
-          </div><!-- Closing for slides div -->
-      </div><!-- Closing for row div -->
-      </div><!-- Closing for container div -->
-    </section>
-
-<main role="main" class="js-output" aria-live="assertive" >
+<main role="main" class="js-output" aria-live="polite" >
     <!-- Section for Search Movies-->
     <section role='section'>
      <div id="search">
@@ -84,17 +71,17 @@
     </div><!-- Closing for movies div -->
    </section>
 
-  <!-- Section for displaying Map with movie theaters near user-->
-  <section role='section'>
-  <div class="container">
-   <div class="row">
-     <div class='col-12'>
-       <div id='map'>
-       </div><!-- Closing for singleMovie div -->
-     </div><!-- Closing for col-3 div -->
-   </div><!-- Closing for row div -->
-   </div><!-- Closing for container div -->
- </section>
+   <!-- Section for displaying Map with movie theaters near user-->
+    <section role='section'>
+    <div class="container">
+     <div class="row">
+       <div class='col-12'>
+         <div id='map'>
+         </div><!-- Closing for singleMovie div -->
+       </div><!-- Closing for col-3 div -->
+     </div><!-- Closing for row div -->
+     </div><!-- Closing for container div -->
+   </section>
 
 </main>
 
