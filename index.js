@@ -8,6 +8,7 @@ let query='';
 //let latitude=0;
 //let longitude=0;
 
+/*
 //function to navigate slides
 function startSlideShow(){
   $('.next').on('click', function(){
@@ -34,10 +35,10 @@ function startSlideShow(){
       prevImg.addClass('active').css('z-index', 10);
   });
 }
-
+*/
 //function to display slide show and handle search movie title
 function submitSearch(){
-   startSlideShow();
+  // startSlideShow();
    searchEntry();
  }
 
