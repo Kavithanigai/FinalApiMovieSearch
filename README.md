@@ -16,7 +16,7 @@ App to search for movies and get details. App also shows a map of nearby movie t
 ### Movie List Page
 ![image](https://user-images.githubusercontent.com/33758117/35697007-d6aacd82-073d-11e8-8ba3-466d9f901565.png)
 
-### Movie Details page with Map to show nearby theaters
+### Movie Details page
 ![image](https://user-images.githubusercontent.com/33758117/35697018-ddb1761c-073d-11e8-809d-099af50d975c.png)
 
 ### Map Page to show nearby movie theaters
